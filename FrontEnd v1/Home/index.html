@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./EstilosHome/estilos.css">
+    <link rel="icon" href="Imagenes/logo .ico">
+    <script src="Javascript"></script>
+</head>
+
+<body>
+
+
+    <!--Menu-->
+    <header>
+
+        <div class="contendor-menu">
+
+            <img src="Imagenes/Portada.png" alt="" class="fondo">
+
+            <div id="contenido-menu">
+                <div>
+                    <a href="#">
+
+                        <img src="Imagenes/logo.png" alt="" class="logo">
+
+                    </a>
+                </div>
+
+                <nav class="menu">
+                    <a href="#Quienes-Somos" class="link-menu">Sobre Nosotros</a>
+                    <a href="#Nuestros-Servicios" class="link-menu">Servicios</a>
+                    <a href="#Contacto" class="link-menu">Contacto</a>
+                </nav>
+
+                <div class="botones">
+
+                    <div class="btn btn-1">
+                        <label for="btn-IniciarSecion">
+                            Iniciar Sesion
+                        </label>
+                    </div>
+                    <a href="Formulario/Formulario.html" class="btn btn-2">Registrarse</a>
+
+                </div>
+            </div>
+            <div class="contenido-portada">
+
+                <img src="Imagenes/logo 4.png" alt="">
+
+            </div>
+
+
+
+        </div>
+
+
+    </header>
+
+
+
+
+    <!--Menu-->
+    <!--Ventana formulario Iniciar Sesion-->
+    <input type="checkbox" id="btn-IniciarSecion">
+    <div class="container-formularioIniciarSesion">
+        <div class="content-formularioIniciarSesion">
+            <form action="" class="formulario-IniciarSesion">
+
+                <div class="encabezado">
+                    <div class="titulo">
+                        <h2>Iniciar Sesion</h2>
+                    </div>
+
+                    <div class="btn-cerrar">
+                        <label for="btn-IniciarSecion">X</label>
+                    </div>
+                </div>
+
+
+                <p type="Usuario:"><input placeholder="Ingrese su usuario"></p>
+
+                <p type="Contraseña:"><input type="password" placeholder="Ingrese su contraseña"></p>
+
+                <p class="TextoProvicional">Botones provicionales </p>
+                <button class="btn-Cliente">
+                    <a href="Cliente/MCliente.html">Vista Cliente</a>
+                </button>
+
+                <button class="btn-Cliente Admin">
+                    <a href="Administrador/CAdministrador.html">Vista Admin</a>
+                </button>
+
+
+
+
+            </form>
+
+        </div>
+        <label for="btn-IniciarSecion" class="cerrar-formulario-contacto"></label>
+    </div>
+    <!--Fin de Ventana formulario -->
+    <!--Quienes somos-->
+    <section>
+
+        <article class="Quienes-somos" id="Quienes-Somos">
+
+            <div class="img-Qs">
+                <img src="Imagenes/quienes somos.jpeg" alt="">
+            </div>
+
+
+            <div class="texto-QS">
+
+                <h2 class="titulo-quienessomos">¿Quienes somos?</h2>
+
+                <p class="texto-quienessomos-parrafo">En Genesis Nails, somos un oasis de belleza y bienestar. Con pasión por la excelencia, ofrecemos una amplia gama de
+                servicios de belleza, desde uñas de acrílico hasta extensiones de pestañas y más. Nuestro equipo de artistas altamente
+                capacitados combina la creatividad con la precisión para realzar tu belleza natural. Nos enorgullece crear una
+                experiencia relajante y rejuvenecedora para nuestros clientes, en un ambiente acogedor y elegante. En Genesis Nails,
+                nuestro compromiso es hacerte sentir y lucir lo mejor posible. Únete a nosotros y descubre un nuevo nivel de belleza y
+                confianza.</p>
+            </div>
+
+        </article>
+
+        <!--Quienes somos-->
+
+
+
+
+        <!--Testimonios-->
+
+        <article class="Testimonios">
+
+            <h2 class="titulo-testimonios">Testimonios</h2>
+
+            <div class="testimonios-contendor-tarjetas">
+
+                <div class="tarjeta-testimonios">
+                    <img src="Imagenes/Perfil 1.jpg" alt="">
+
+                    <div class="texto-testimonios">
+                        <h3>Tamara Rodriguez</h3>
+                        <p class="texto-testimonios-parrafo">Genesis Nails brilla con su excepcional profesionalismo y creatividad en cada servicio. ¡Una experiencia de belleza
+                        excepcional!</p>
+                    </div>
+                    <div class="calificacion">
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+
+                <div class="tarjeta-testimonios">
+                    <img src="Imagenes/perfil 2.jpg" alt="">
+
+                    <div class="texto-testimonios">
+                        <h3>Michel Arias</h3>
+                        <p class="texto-testimonios-parrafo">Servicios impecables, ambiente acogedor y personal talentoso hacen de Genesis Nails mi destino favorito para el cuidado
+                        de belleza. </p>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </article>
+
+
+
+
+        <!--Servicios-->
+
+
+
+        <article class="Nuestros-servicios" id="Nuestros-Servicios">
+
+            <h2 class="titulo">Nuestros servicios</h2>
+
+            <div id="slider">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <input type="radio" name="slider" id="slide4">
+                <input type="radio" name="slider" id="slide5">
+                <input type="radio" name="slider" id="slide6">
+                <div id="slides">
+                    <div id="overflow">
+                        <div class="inner">
+                            <div class="slide slide_1">
+                                <div class="slide-content">
+                                    <h2>Uñas en acrilico</h2>
+
+                                    <div class="boton-modal">
+                                        <label for="btn-modal">
+                                            Mas Informacion
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="slide slide_2">
+                                <div class="slide-content">
+                                    <h2>Cepillado y Alisado</h2>
+
+                                    <div class="boton-modal">
+                                        <label for="btn-modal-2">
+                                            Mas Informacion
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide slide_3">
+                                <div class="slide-content">
+                                    <h2>Uñas en Semipermantente</h2>
+
+                                    <div class="boton-modal">
+                                        <label for="btn-modal-3">
+                                            Mas Informacion
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="slide slide_4">
+                                <div class="slide-content">
+                                    <h2>Manicure y Pedicure Tradicional</h2>
+
+                                    <div class="boton-modal">
+                                        <label for="btn-modal-4">
+                                            Mas Informacion
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide slide_5">
+                                <div class="slide-content">
+                                    <h2>Diseño de Cejas</h2>
+                            
+                                    <div class="boton-modal">
+                                        <label for="btn-modal-5">
+                                            Mas Informacion
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide slide_6">
+                                <div class="slide-content">
+                                    <h2>Extension de Pestañas</h2>
+                            
+                                    <div class="boton-modal">
+                                        <label for="btn-modal-6">
+                                            Mas Informacion
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="controls">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                    <label for="slide5"></label>
+                    <label for="slide6"></label>
+                </div>
+                <div id="bullets">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                    <label for="slide5"></label>
+                    <label for="slide6"></label>
+                </div>
+            </div>
+
+
+            <!--Ventana Modal-->
+            <input type="checkbox" id="btn-modal">
+            <div class="container-modal">
+                <div class="content-modal">
+
+                    <div class="contenido">
+
+                    </div>
+                    <div class="encabezado">
+                        <div class="titulo">
+                            <h2>Uñas en acrilico</h2>
+                        </div>
+
+                        <p>¡Transforma tus manos con elegantes uñas de acrílico! Estas extensiones de uñas, hechas de polímeros, se esculpen y
+                        endurecen para un look fabuloso. ¡Reserva ahora!
+                        </p>
+
+
+                    </div>
+
+                    <button class="btn-agendar-cita">Agendar Cita</button>
+                </div>
+                <label for="btn-modal" class="cerrar-modal"></label>
+            </div>
+            <!--Fin de Ventana Modal-->
+
+            <!--Ventana Modal 2-->
+            <input type="checkbox" id="btn-modal-2">
+            <div class="container-modal-2">
+                <div class="content-modal">
+
+                    <div class="contenido">
+
+                    </div>
+                    <div class="encabezado">
+                        <div class="titulo">
+                            <h2>Cepillado y Alisado</h2>
+                        </div>
+
+                        <p>¡Transforma tu cabello con nuestro servicio de cepillado y alisado profesional! Obtén un look suave y pulido al
+                        instante. ¡Reserva ahora!
+                        </p>
+
+
+                    </div>
+
+                    <button class="btn-agendar-cita">Agendar Cita</button>
+
+                </div>
+                <label for="btn-modal-2" class="cerrar-modal"></label>
+            </div>
+            <!--Fin de Ventana Modal 2-->
+            <!--Ventana Modal 3-->
+            <input type="checkbox" id="btn-modal-3">
+            <div class="container-modal-3">
+                <div class="content-modal">
+                    <div class="contenido">
+
+                    </div>
+                    <div class="encabezado">
+                        <div class="titulo">
+                            <h2>Uñas en Semipermantente</h2>
+                        </div>
+
+                        <p>¡Eleva tu estilo con nuestras uñas semipermanentes expertamente aplicadas para un look duradero y sofisticado! ¡Reserva
+                        tu cita hoy mismo!
+                        </p>
+
+
+                    </div>
+
+                    <button class="btn-agendar-cita">Agendar Cita</button>
+                </div>
+                <label for="btn-modal-3" class="cerrar-modal"></label>
+            </div>
+            <!--Fin de Ventana Modal 3-->
+            <!--Ventana Modal 4-->
+            <input type="checkbox" id="btn-modal-4">
+            <div class="container-modal-4">
+                <div class="content-modal">
+                    <div class="contenido">
+
+                    </div>
+                    <div class="encabezado">
+                        <div class="titulo">
+                            <h2>Manicure y Pedicure Tradicional</h2>
+                        </div>
+
+                        <p>¡Date un capricho con nuestro servicio de manicure y pedicure! Mimamos tus manos y pies para un look impecable y
+                        relajante. ¡Reserva ahora!
+                        </p>
+
+
+                    </div>
+
+                    <button class="btn-agendar-cita">Agendar Cita</button>
+                </div>
+                <label for="btn-modal-4" class="cerrar-modal"></label>
+            </div>
+            <!--Fin de Ventana Modal 4-->
+
+            <!--Ventana Modal 5-->
+            <input type="checkbox" id="btn-modal-5">
+            <div class="container-modal-5">
+                <div class="content-modal">
+            
+                    <div class="contenido">
+            
+                    </div>
+                    <div class="encabezado">
+                        <div class="titulo">
+                            <h2>Diseño de Cejas</h2>
+                        </div>
+            
+                        <p>¡Diseña tus cejas para enmarcar tu mirada! Nuestro servicio de diseño de cejas resalta tu belleza natural. ¡Reserva tu
+                        cita ahora!
+                        </p>
+            
+            
+                    </div>
+            
+                    <button class="btn-agendar-cita">Agendar Cita</button>
+            
+                </div>
+                <label for="btn-modal-5" class="cerrar-modal"></label>
+            </div>
+
+            <!--Ventana Modal 6-->
+            <input type="checkbox" id="btn-modal-6">
+            <div class="container-modal-6">
+                <div class="content-modal">
+            
+                    <div class="contenido">
+            
+                    </div>
+                    <div class="encabezado">
+                        <div class="titulo">
+                            <h2>Extension de Pestañas</h2>
+                        </div>
+            
+                        <p>¡Dale vida a tus ojos con nuestras extensiones de pestañas premium! Resalta tu belleza con pestañas largas y
+                        exuberantes. ¡Reserva ahora mismo tu cita!
+                        </p>
+            
+            
+                    </div>
+            
+                    <button class="btn-agendar-cita">Agendar Cita</button>
+            
+                </div>
+                <label for="btn-modal-6" class="cerrar-modal"></label>
+            </div>
+
+
+
+        </article>
+
+        <!--Servicios-->
+
+
+        <!--Contacto-->
+
+
+
+        <article class="Contacto" id="Contacto">
+
+            <div class="texto-contacto">
+                <h2 class="titulo-contacto">Contacto</h3>
+                    <ul>
+                        <li>Direccion:calle Argentina #5-48 (frente al Distrito educativo), Buenaventura, Colombia</li>
+                    </ul>
+                    <ul>
+                        <li>Correo:GenesisNails@Hotmail.com</li>
+                    </ul>
+                    <ul>
+                        <li>Telefono:3103631728</li>
+                    </ul>
+
+                    <div class="boton-contacto">
+                        <label for="btn-contacto">
+                            Contactanos
+                        </label>
+                    </div>
+
+            </div>
+
+            <img src="Imagenes/Ubicacion.png" alt="" class="ubicacion">
+
+            <!--Ventana formulario contacto -->
+            <input type="checkbox" id="btn-contacto">
+            <div class="container-contacto">
+                <div class="content-contacto">
+                    <form action="" class="formulario">
+
+                        <div class="encabezado">
+                            <div class="titulo">
+                                <h2>Contacto</h2>
+                            </div>
+
+                            <div class="btn-cerrar">
+                                <label for="btn-contacto">X</label>
+                            </div>
+                        </div>
+
+
+                        <p type="Nombre:"><input placeholder="Ingrese su nombre completo...."></p>
+
+                        <p type="Email:"><input placeholder="Ingrese su Email...."></p>
+
+                        <p type="Mensaje:"><input
+                                placeholder="Ingrese el mensaje que desea enviarnos en este campo...."></p>
+
+                        <button class="btn-enviar">Enviar mensaje</button>
+
+
+
+                        <div class="informacion">
+                            <span class="telefono">3103631728</span>
+                            <span class="correo">GenesisNails@Hotmail.com</span>
+                        </div>
+                    </form>
+
+                </div>
+                <label for="btn-contacto" class="cerrar-formulario-contacto"></label>
+            </div>
+            <!--Fin de Ventana formulario -->
+
+
+        </article>
+
+
+        <!--Contacto-->
+
+    </section>
+
+    <!--Footer-->
+    <footer>
+
+    <h2 class="footer">&copySalón de Belleza Génesis Nails</h2>
+
+    </footer>
+
+
+
+    <!--Footer-->
+
+</body>
+
+</html>

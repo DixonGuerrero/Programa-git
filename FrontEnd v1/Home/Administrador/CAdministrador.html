@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Génesis Nails</title>
+    <link rel="stylesheet" href="CAdministrador.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                <img src="Img/LOGO_GENESIS_blanco.png" alt="Génesis Nails">
+            </div>
+            <ul class="navigation">
+                <li><a href="#">Clientes y Citas</a></li>
+                <li><a href="PAdministrador.html">Productos y Proveedores</a></li>
+                <li><a href="../index.html">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="menu_lateral">
+            <ul>
+                <li><a href="#" id="menu_clientes">Clientes</a></li>
+                <li><a href="#" id="menu_citas">Citas</a></li>
+                <li><a href="#" id="menu_agendar">Agendar cita</a></li>
+                <li><a href="#" id="menu_modificar">Modificar cita</a></li>
+                <li><a href="#" id="menu_eliminar">Eliminar cita</a></li>
+            </ul>
+        </section>
+        
+        <section id="clientes" class="clientes menu">
+            <div class="div_titulo">
+                <h1 class="titulo">Registro de clientes</h1>
+            </div>
+            <form action="#">
+                <label for="ClBuscar" class="menu_subtitulo">Buscar nombre del cliente:</label>
+                <input type="text" name="ClBuscar" class="menu_input" value="">
+                <label for="ClInformacion" class="menu_subtitulo">Información sobre el cliente:</label>
+                <input type="textarea" name="ClInformacion" class="menu_output" value="">
+            </form>
+        </section>
+
+        <section id="citas" class="citas menu">
+            <div class="div_titulo">
+                <h1 class="titulo">Registro de citas</h1>
+            </div>
+            <form action="#">
+                <label for="CiDate" class="menu_subtitulo">Seleccionar fecha y hora:</label>
+                <input type="text" name="CiDate" class="menu_input" value="Menú temporal">
+                <label for="CiCita" class="menu_subtitulo">Seleccionar cita:</label>
+                <select name="CiCita" class="menu_seleccionar">
+                    <option selected></option>
+                </select>
+                <label for="CiInformacion" class="menu_subtitulo">Información sobre la cita:</label>
+                <input type="textarea" name="CiInformacion" class="menu_output" value="">
+            </form>
+        </section>
+
+        <section id="Acitas" class="Acitas menu">
+            <div class="div_titulo">
+                <h1 class="titulo">Agendar cita</h1>
+            </div>
+            <form action="#">
+                <label for="ABuscar" class="menu_subtitulo">Buscar cliente:</label>
+                <input type="text" name="ABuscar" class="menu_input" value="">
+                <label for="AServicio" class="menu_subtitulo">Seleccionar servicio:</label>
+                <select name="AServicio" class="menu_seleccionar">
+                    <option selected>Selecciona un servicio</option>
+                    <option>Cepillado y alisado</option>
+                    <option>Uñas en acrílico</option>
+                    <option>Uñas semipermanente</option>
+                    <option>Manicure y pedicure</option>
+                    <option>Diseño de cejas</option>
+                    <option>Extensión de pestañas</option>
+                </select>
+                <label for="ADate" class="menu_subtitulo">Seleccionar fecha y hora:</label>
+                <input type="text" name="ADate" class="menu_input" value="Menú temporal">
+                <div class="botones">
+                    <input type="button" value="Agendar" id="agendarCi" class="boton b_aceptar">
+                    <input type="reset" value="Limpiar" class="boton b_limpiar">
+                </div>
+            </form>
+        </section>
+
+        <section id="Mcitas" class="Mcitas menu">
+            <div class="div_titulo">
+                <h1 class="titulo">Modificar cita</h1>
+            </div>
+            <form action="#">
+                <label for="MBuscar" class="menu_subtitulo">Buscar cliente:</label>
+                <input type="text" name="MBuscar" class="menu_input" value="">
+                <label for="MCita" class="menu_subtitulo">Seleccionar cita:</label>
+                <select name="MCita" class="menu_seleccionar">
+                    <option selected></option>
+                </select>
+                <label for="MServicio" class="menu_subtitulo">Modificar servicio:</label>
+                <select name="MServicio" class="menu_seleccionar">
+                    <option selected>Seleccionar servicio</option>
+                    <option>Cepillado y alisado</option>
+                    <option>Uñas en acrílico</option>
+                    <option>Uñas semipermanente</option>
+                    <option>Manicure y pedicure</option>
+                    <option>Diseño de cejas</option>
+                    <option>Extensión de pestañas</option>
+                </select>
+                <label for="MDate" class="menu_subtitulo">Modificar fecha y hora:</label>
+                <input type="text" name="MDate" class="menu_input" value="Menú temporal">
+                <div class="botones">
+                    <input type="button" value="Modificar" id="modificarCi" class="boton b_aceptar">
+                    <input type="reset" value="Limpiar" class="boton b_limpiar">
+                </div>
+            </form>
+        </section>
+
+        <section id="Ecitas" class="Ecitas menu">
+            <div class="div_titulo">
+                <h1 class="titulo">Eliminar cita</h1>
+            </div>
+            <form action="#">
+                <label for="EBuscar" class="menu_subtitulo">Buscar cliente:</label>
+                <input type="text" name="EBuscar" class="menu_input" value="">
+                <label for="ECita" class="menu_subtitulo">Seleccionar cita:</label>
+                <select name="ECita" class="menu_seleccionar">
+                    <option selected></option>
+                </select>
+                <div class="botones">
+                    <input type="button" value="Eliminar" id="eliminarCi" class="boton b_aceptar">
+                    <input type="reset" value="Limpiar" class="boton b_limpiar">
+                </div>
+            </form>
+        </section>
+
+        <section id="confirmar">
+            <div id="alerta_confirmar">
+                <div class="conf_titulo">
+                    <h2>Confirmación</h2>
+                </div>
+                <div class="conf_texto">
+                    <p id="textoConfirmar"></p>
+                </div>
+                <div class="botones">
+                    <input type="button" value="Aceptar" id="aceptarConfirmar" class="boton b_aceptar">
+                    <input type="button" value="Cancelar" id="cancelarConfirmar" class="boton b_limpiar">
+                </div>
+            </div>
+            <div id="alerta_enviado">
+                <div class="conf_titulo">
+                    <h2>Confirmación</h2>
+                </div>
+                <div class="conf_texto">
+                    <p id="textoEnviado"></p>
+                </div>
+                <div class="imagen_check">
+                    <img src="Img/iconmonstr-check-mark-circle-lined-240.png" alt="Enviado">
+                </div>
+                <div class="botones">
+                    <input type="button" value="Aceptar" id="aceptarEnviado" class="boton b_aceptar">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div>
+            <h2>&copySalón de Belleza Génesis Nails</h2>
+        </div>
+    </footer>
+
+    <script src="CAdministrador.js"></script>    
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Génesis Nails</title>
+    <link rel="stylesheet" href="MCliente.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                <img src="Img/LOGO_GENESIS_blanco.png" alt="Génesis Nails">
+            </div>
+            <ul class="navigation">
+                <li><a href="MCliente.html">Inicio</a></li>
+                <li><a href="ACliente.html">Actualizar datos</a></li>
+                <li><a href="../index.html">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="menu_lateral">
+            <ul>
+                <li><a href="#" id="menu_agendar">Agendar nueva cita</a></li>
+                <li><a href="#" id="menu_modificar">Modificar cita</a></li>
+                <li><a href="#" id="menu_eliminar">Eliminar cita</a></li>
+            </ul>
+        </section>
+
+        <section id="agenda" class="menu">
+            <div class="div_titulo">
+                <h1 class="titulo">Agendar cita</h1>
+            </div>
+            <form action="#">
+                <label for="Servicio" class="menu_subtitulo">Seleccionar servicio:</label>
+                <select name="Servicio" class="menu_seleccionar">
+                    <option selected>Selecciona un servicio</option>
+                    <option>Cepillado y alisado</option>
+                    <option>Uñas en acrílico</option>
+                    <option>Uñas semipermanente</option>
+                    <option>Manicure y pedicure</option>
+                    <option>Diseño de cejas</option>
+                    <option>Extensión de pestañas</option>
+                </select>
+                <label for="Date" class="menu_subtitulo">Selecciona la fecha y la hora:</label>
+                <input type="text" name="Date" class="menu_input" value="Input temporal">
+                <div class="botones">
+                    <input type="button" value="Aceptar" id="aceptarAgenda" class="boton b_aceptar">
+                    <input type="reset" value="Limpiar" class="boton b_limpiar">
+                </div>
+            </form>
+        </section>
+
+        <section id="modificar" class="menu">
+            <div class="div_titulo">
+                <h1 class="titulo">Modificar cita</h1>
+            </div>
+            <form action="#">
+                <label for="M_seleccionar_cita" class="menu_subtitulo">Seleccionar cita</label>
+                <select name="M_seleccionar_cita" class="menu_seleccionar">
+                    <option selected>Selecciona una cita</option>
+                </select>
+                <label for="modificar_servicio" class="menu_subtitulo">Modificar servicio</label>
+                <select name="modificar_servicio" class="menu_seleccionar">
+                    <option selected>Selecciona un servicio</option>
+                    <option>Cepillado y alisado</option>
+                    <option>Uñas en acrílico</option>
+                    <option>Uñas semipermanente</option>
+                    <option>Manicure y pedicure</option>
+                    <option>Diseño de cejas</option>
+                    <option>Extensión de pestañas</option>
+                </select>
+                <label for="Date_modificado" class="menu_subtitulo">Selecciona la fecha y la hora:</label>
+                <input type="text" name="Date_modificado" class="menu_input" value="Input temporal">
+                <div class="botones">
+                    <input type="button" value="Aceptar" id="aceptarModificar" class="boton b_aceptar">
+                    <input type="reset" value="Limpiar" class="boton b_limpiar">
+                </div>
+            </form>
+        </section>
+
+        <section id="eliminar" class="menu">
+            <div class="div_titulo">
+                <h1 class="titulo">Eliminar cita</h1>
+            </div>
+            <div class="E_text">
+                <p>El plazo máximo para eliminar una cita es de 2 horas antes de la misma.</p>
+            </div>
+            <form action="#">
+                <label for="E_seleccionar_cita" class="menu_subtitulo">Seleccionar cita</label>
+                <select name="E_seleccionar_cita" class="menu_seleccionar">
+                    <option selected>Selecciona una cita</option>
+                </select>
+                <div class="botones">
+                    <input type="button" value="Aceptar" id="aceptarEliminar" class="boton b_aceptar">
+                    <input type="reset" value="Limpiar" class="boton b_limpiar">
+                </div>
+            </form>
+        </section>
+
+        <section id="confirmar">
+            <div id="alerta_confirmar">
+                <div class="conf_titulo">
+                    <h2>Confirmación</h2>
+                </div>
+                <div class="conf_texto">
+                    <p id="textoConfirmar"></p>
+                </div>
+                <div class="botones">
+                    <input type="button" value="Aceptar" id="aceptarConfirmar" class="boton b_aceptar">
+                    <input type="button" value="Cancelar" id="cancelarConfirmar" class="boton b_limpiar">
+                </div>
+            </div>
+            <div id="alerta_enviado">
+                <div class="conf_titulo">
+                    <h2>Confirmación</h2>
+                </div>
+                <div class="conf_texto">
+                    <p id="textoEnviado"></p>
+                </div>
+                <div class="imagen_check">
+                    <img src="Img/iconmonstr-check-mark-circle-lined-240.png" alt="Enviado">
+                </div>
+                <div class="botones">
+                    <input type="button" value="Aceptar" id="aceptarEnviado" class="boton b_aceptar">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <h2>&copySalón de Belleza Génesis Nails</h2>
+        </div>
+    </footer>
+
+    <script src="MCliente.js"></script>
+</body>
+</html>

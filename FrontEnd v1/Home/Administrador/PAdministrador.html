@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Génesis Nails</title>
+    <link rel="stylesheet" href="PAdministrador.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                <img src="Img/LOGO_GENESIS_blanco.png" alt="Génesis Nails">
+            </div>
+            <ul class="navigation">
+                <li><a href="CAdministrador.html">Clientes y Citas</a></li>
+                <li><a href="#">Productos y Proveedores</a></li>
+                <li><a href="../index.html">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="menu_lateral">
+            <ul>
+                <li><a href="#" id="menu_consultar">Consultas</a></li>
+                <li><a href="#" id="menu_prodprov">Productos / Proveedores</a></li>
+                <li><a href="#" id="menu_entsal">Entradas / Salidas</a></li>
+            </ul>
+        </section>
+
+        <section id="consultas" class="consultas menu">
+            <div class="div_titulo">
+                <h1 class="titulo">Consultas</h1>
+            </div>
+            <form action="#">
+                <select name="Consulta" class="menu_seleccionar">
+                    <option selected>¿Qué desea consultar?</option>
+                    <option>Productos</option>
+                    <option>Proveedores</option>
+                    <option>Entradas</option>
+                    <option>Salidas</option>
+                </select>
+                <div class="CProductos menu_oculto">
+                    <label for="CBuscar" class="menu_subtitulo">Buscar nombre del producto:</label>
+                    <input type="text" name="CBuscar" class="menu_input" value="">
+                    <label for="CInformacion" class="menu_subtitulo">Información sobre el producto:</label>
+                    <input type="textarea" name="CInformacion" class="menu_output" value="">
+                </div>
+            </form>
+        </section>
+
+        <section id="prodprov" class="prodprov menu">
+            <div class="div_titulo">
+                <h1 class="titulo">Productos / Proveedores</h1>
+            </div>
+            <form action="#">
+                <select name="Productos" class="menu_seleccionar">
+                    <option selected>¿Qué desea?</option>
+                    <option>Registrar un nuevo producto</option>
+                    <option>Registrar un nuevo proveedor</option>
+                    <option>Modificar un producto</option>
+                    <option>Modificar un proveedor</option>
+                </select>
+                <div class="registrar_pro menu_oculto">
+                    <label for="ProNombre" class="menu_subtitulo">Nombre del producto:</label>
+                    <input type="text" name="ProNombre" class="menu_input" value="">
+                    <label for="PID" class="menu_subtitulo">ID del producto:</label>
+                    <input type="text" name="PID" class="menu_input" value="">
+                    <label for="ProProveedor" class="menu_subtitulo">Buscar proveedor:</label>
+                    <select name="ProProveedor" class="menu_seleccionar">
+                        <option selected></option>
+                    </select>
+                    <div class="botones">
+                        <input type="button" value="Registrar" id="registrarPro" class="boton b_aceptar">
+                        <input type="reset" value="Limpiar" class="boton b_limpiar">
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section id="entsal" class="entsal menu">
+            <div class="div_titulo">
+                <h1 class="titulo">Entradas / Salidas</h1>
+            </div>
+            <form action="#">
+                <select name="Productos" class="menu_seleccionar">
+                    <option selected>¿Qué desea?</option>
+                    <option>Registrar entrada de producto</option>
+                    <option>Registrar salida de producto</option>
+                    <option>Consultar entrada de producto</option>
+                    <option>Consultar salida de producto</option>
+                </select>
+                <div class="registrar_ent menu_oculto">
+                    <label for="ReNombreEnt" class="menu_subtitulo">Buscar producto:</label>
+                    <input type="text" name="ReNombreEnt" class="menu_input" value="">
+                    <label for="ReDateEnt" class="menu_subtitulo">Seleccionar fecha y hora:</label>
+                    <input type="text" name="ReDateEnt" class="menu_input" value="Menú temporal">
+                    <label for="ReCantidadEnt" class="menu_subtitulo">Ingresar cantidad:</label>
+                    <input type="text" name="ReCantidadEnt" class="menu_input" value="">
+                    <div class="botones">
+                        <input type="button" value="Registrar" id="registrarEnt" class="boton b_aceptar">
+                        <input type="reset" value="Limpiar" class="boton b_limpiar">
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section id="confirmar">
+            <div id="alerta_confirmar">
+                <div class="conf_titulo">
+                    <h2>Confirmación</h2>
+                </div>
+                <div class="conf_texto">
+                    <p id="textoConfirmar"></p>
+                </div>
+                <div class="botones">
+                    <input type="button" value="Aceptar" id="aceptarConfirmar" class="boton b_aceptar">
+                    <input type="button" value="Cancelar" id="cancelarConfirmar" class="boton b_limpiar">
+                </div>
+            </div>
+            <div id="alerta_enviado">
+                <div class="conf_titulo">
+                    <h2>Confirmación</h2>
+                </div>
+                <div class="conf_texto">
+                    <p id="textoEnviado"></p>
+                </div>
+                <div class="imagen_check">
+                    <img src="Img/iconmonstr-check-mark-circle-lined-240.png" alt="Enviado">
+                </div>
+                <div class="botones">
+                    <input type="button" value="Aceptar" id="aceptarEnviado" class="boton b_aceptar">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <h2>&copySalón de Belleza Génesis Nails</h2>
+        </div>
+    </footer>
+
+    <script src="PAdministrador.js"></script>
+</body>
+</html>

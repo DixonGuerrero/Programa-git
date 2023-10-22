@@ -1,0 +1,1378 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Gurmukhi&display=swap');
+
+:root {
+    --color-fondo: rgb(255, 0, 255);
+    --color-dos: rgb(134, 35, 134);
+    --color-tres: rgb(40, 255, 244);
+}
+
+body {
+    font-family: 'lora',
+        sans-serif;
+    font-size: 30px;
+    margin: 0;
+
+}
+
+header {
+    width: 100%;
+    position: relative;
+    font-family: 'Anek Gurmukhi',
+        sans-serif;
+
+    margin: 0;
+
+
+
+}
+
+header h1 {
+    font-family: 'Arbutus Slab',
+        serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fondo {
+    width: 100%;
+}
+
+#contenido-menu {
+    position: fixed;
+    display: flex;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+
+
+
+}
+
+.logo {
+    width: 10%;
+    margin-left: 20px;
+    border-radius: 3px;
+    padding: 4px;
+    background-color: var(--color-dos);
+
+}
+
+
+/*Estilos del menu*/
+nav {
+
+    margin: 20px;
+    width: 800px;
+    margin-left: -100px;
+    margin-top: 27px;
+
+
+}
+
+
+
+
+.link-menu {
+    color: white;
+    padding: 3PX;
+    padding-top: 9PX;
+}
+
+
+.menu a:hover {
+
+    border-radius: 20PX;
+    background-color: rgb(134, 35, 134, 0.5);
+
+}
+
+.botones {
+    display: flex;
+    width: 25%;
+    margin-right: 10px;
+    margin: 20px;
+
+
+}
+
+.btn {
+    font-family: 'Anek Gurmukhi', sans-serif;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-left: 10px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    border-radius: 20PX;
+    background-color: transparent;
+    border: solid 2px white;
+
+}
+
+.btn-1 {
+    background-color: var(--color-dos);
+    color: white;
+
+}
+
+.btn-1:hover {
+    background-color: var(--color-tres);
+    border: solid 2px var(--color-dos);
+}
+
+.btn-2 {
+    background-color: var(--color-tres);
+    border: solid 2px var(--color-dos);
+}
+
+
+.btn-2:hover {
+    background-color: var(--color-dos);
+    border: solid 2px white;
+    color: white;
+}
+
+
+
+.contenido-portada {
+
+    position: absolute;
+    text-align: center;
+
+    width: 40%;
+    top: 33%;
+    left: 50%;
+
+
+}
+
+
+
+.contenido-portada img {
+    width: 600PX;
+}
+
+
+.Texto-entrada {
+    font-family: 'Niconne', cursive;
+    font-size: 30px;
+}
+
+/*Fin de estilos del menu*/
+
+
+
+/*Ventana formulario de iniciar sesion*/
+#btn-IniciarSecion {
+    display: none;
+}
+
+.container-formularioIniciarSesion {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#btn-IniciarSecion:checked~.container-formularioIniciarSesion {
+    display: flex;
+}
+
+
+
+.content-formularioIniciarSesion .btn-cerrar {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content-formularioIniciarSesion .btn-cerrar label {
+    padding: 7px 15px;
+    background-color: var(--color-dos);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+
+}
+
+.content-formularioIniciarSesion .btn-cerrar label:hover {
+    background-color: #185E83;
+}
+
+.cerrar-formulario-contacto {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+@media screen and (max-width:800px) {
+    .content-contacto {
+        width: 90%;
+
+    }
+
+}
+
+/*Fin ventana de formulario de contacto*/
+/*Estilos del contenido del formulario*/
+
+
+.formulario-IniciarSesion {
+    width: 440px;
+    height: 480px;
+    background: white;
+    border-radius: 9px;
+    box-shadow: 0 0 40px -10px #000;
+    margin: calc(50vh -220px) auto;
+    padding: 10px 30px;
+    max-width: calc(100vw -40px);
+    box-sizing: border-box;
+    position: relative;
+
+}
+
+.formulario-IniciarSesion .encabezado {
+    display: flex;
+}
+
+.formulario-IniciarSesion .encabezado .btn-cerrar {
+    font-size: 20px;
+    margin-bottom: 7px;
+
+}
+
+.formulario-IniciarSesion h2 {
+    margin: 10px 0;
+    padding-bottom: 10px;
+    width: 300px;
+    color: var(--color-dos);
+    border-bottom: 3px solid black;
+}
+
+
+.formulario-IniciarSesion input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    transition: all .3s;
+    border-bottom: 2px solid grey;
+    font-size: 15px;
+}
+
+
+.formulario-IniciarSesion input:focus {
+    border-bottom: 2px solid var(--color-tres);
+
+}
+
+.formulario-IniciarSesion p:before {
+    content: attr(type);
+    display: block;
+    margin: 28px 0 0;
+    font-size: 20px;
+    color: black;
+}
+
+.TextoProvicional{
+    text-align: center;
+}
+
+.btn-Cliente {
+    font-size: 20px;
+    padding: 10px;
+    
+    margin:23px;
+    border-radius: 10px;
+    border: 2px solid gray;
+    background: 0;
+    color: black;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.btn-iniciarSesion:hover {
+    background: var(--color-dos);
+    color: white;
+}
+
+
+
+
+/*Fin de los estilos del contenido del formulario*/
+
+/*Estilos de seccion Quienes somos*/
+
+.Quienes-somos {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color:white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 40px -14px #000;
+    
+
+
+}
+
+
+.img-Qs img {
+    height: 400px;
+    margin: 60px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(40, 255, 244, .1);
+    margin-top: 100PX;
+
+
+}
+
+
+
+
+.texto-QS {
+    width: 50%;
+    margin: 0 auto;
+    text-align: justify;
+
+}
+
+.titulo-quienessomos {
+    text-align: center;
+    margin: 0;
+    color: var(--color-dos);
+    padding-bottom: 10px;
+}
+
+.texto-quienessomos-parrafo {
+    color:black;
+}
+
+
+
+
+
+/* Fin de estilos de seccion Quienes somos*/
+
+
+/*Estilos seccion testimonios*/
+
+.Testimonios {
+
+    justify-content: space-between;
+    padding-bottom: 150px;
+    padding-top: 100px;
+    width: 100%;
+    
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px -14px #000;
+
+
+}
+
+
+.titulo-testimonios {
+    text-align: center;
+    margin: 10px;
+    padding-top: 50px;
+    margin-bottom: 30px;
+    color: var(--color-dos);
+}
+
+.testimonios-contendor-tarjetas {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.tarjeta-testimonios {
+    background-color: white;
+    color: black;
+    width: 49%;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 40px -14px #000;
+    display: flex;
+    position: relative;
+
+}
+
+.tarjeta-testimonios p {
+    text-align: justify;
+    position: absolute;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 25PX;
+
+}
+
+.tarjeta-testimonios img {
+    width: 35%;
+    border-radius: 20px;
+}
+
+.texto-testimonios {
+    width: 60%;
+    padding-left: 30PX;
+    padding-right: 30px;
+    text-align: justify;
+    position: relative;
+    
+    
+}
+
+
+.texto-testimonios H3 {
+    text-align: center;
+    color: var(--color-dos);
+    margin-top: 10px;
+
+}
+
+
+/*Fin estilos seccion testimonios*/
+
+
+
+
+/*Estilos de la seccion de servicios*/
+
+
+.Nuestros-servicios {
+    padding-top: 150PX;
+    padding-bottom: 150PX;
+    border-radius: 20px;
+    box-shadow: 10px 10px 40px -14px #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Nuestros-servicios .titulo{
+    text-align: center;
+    color: var(--color-dos);
+    margin-bottom: 50px;
+
+}
+
+#slider {
+    margin: 0 auto;
+    width: 1000px;
+    
+    max-width: 100%;
+    text-align: center;
+}
+
+#slider input[type=radio] {
+    display: none;
+}
+
+#slider label {
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+#slides {
+    border-radius: 10PX;
+    height: 500PX;
+}
+
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slide1:checked~#slides .inner {
+    margin-left: 0;
+}
+
+#slide2:checked~#slides .inner {
+    margin-left: -100%;
+}
+
+#slide3:checked~#slides .inner {
+    margin-left: -200%;
+}
+
+#slide4:checked~#slides .inner {
+    margin-left: -300%;
+}
+
+#slide5:checked~#slides .inner{
+    margin-left: -400%;
+}
+
+#slide6:checked~#slides .inner {
+    margin-left: -500%;
+}
+
+
+#slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 600%;
+    line-height: 0;
+    height: 500px;
+}
+
+#slides .slide {
+    width: 16.6666666666%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 20PX;
+    color: white;
+
+    
+}
+
+#slides .slide_1 {
+    background:url("../Imagenes/uñas\ en\ acrilico\ 2.jpg") no-repeat;
+    background-size: cover;
+    background-color: rgb(94, 86, 86);
+    background-blend-mode: soft-light;
+}
+
+#slides .slide_2 {
+    background:url("../Imagenes/Cepillado\ Alisado.jpeg") no-repeat;
+    background-size: cover;
+    background-color: rgb(94, 86, 86);
+    background-blend-mode: soft-light;
+}
+
+#slides .slide_3 {
+    background:url("../Imagenes/Uñas\ Semis.jpg") no-repeat;
+    background-size: cover;
+    background-color: rgb(94, 86, 86);
+    background-blend-mode: soft-light;
+}
+
+#slides .slide_4 {
+    background:url("../Imagenes/Manicure\ Pedicure.jpeg") no-repeat;
+    background-size: cover;
+    background-color: rgb(94, 86, 86);
+    background-blend-mode: soft-light;
+}
+
+#slides .slide_5 {
+    background: url("../Imagenes/Cejas.jpg") no-repeat;
+    background-size: cover;
+    background-color: rgb(94, 86, 86);
+    background-blend-mode: soft-light;
+}
+
+#slides .slide_6 {
+    background: url("../Imagenes/Pesta;as\ 2.jpg") no-repeat;
+    background-size: cover;
+    background-color: rgb(94, 86, 86);
+    background-blend-mode: soft-light;
+}
+
+#controls {
+    margin: -180px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+
+}
+
+#controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+
+}
+
+#controls label:hover {
+    opacity: 1;
+
+}
+
+#slide1:checked~#controls label:nth-child(2),
+#slide2:checked~#controls label:nth-child(3),
+#slide3:checked~#controls label:nth-child(4),
+#slide4:checked~#controls label:nth-child(5),
+#slide5:checked~#controls label:nth-child(6),
+#slide6:checked~#controls label:nth-child(1) {
+    background: url(../Imagenes/siguiente_\ icono.svg) no-repeat;
+    float: right;
+    margin: -100px -60px 0 0;
+    display: block;
+    
+}
+
+#slide1:checked~#controls label:nth-last-child(1),
+#slide2:checked~#controls label:nth-last-child(5),
+#slide3:checked~#controls label:nth-last-child(5),
+#slide4:checked~#controls label:nth-last-child(4),
+#slide5:checked~#controls label:nth-last-child(3),
+#slide6:checked~#controls label:nth-last-child(2) {
+    background: url(../Imagenes/anterior.svg) no-repeat;
+    float: left;
+    margin: -100px 0 0 -50px;
+    display: block;
+}
+
+#bullets {
+    margin: 60px 0 0;
+    text-align: center;
+    
+}
+
+#bullets label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: #ccc;
+    margin: 0 10px;
+}
+
+#slide1:checked~#bullets label:nth-child(1),
+#slide2:checked~#bullets label:nth-child(2),
+#slide3:checked~#bullets label:nth-child(3),
+#slide4:checked~#bullets label:nth-child(4),
+#slide5:checked~#bullets label:nth-child(5),
+#slide6:checked~#bullets label:nth-child(6) {
+    background: var(--color-tres);
+}
+
+@media screen and (max-width: 900px) {
+
+    #slide1:checked~#controls label:nth-child(2),
+    #slide2:checked~#controls label:nth-child(3),
+    #slide3:checked~#controls label:nth-child(4),
+    #slide4:checked~#controls label:nth-child(5),
+    #slide5:checked~#controls label:nth-child(6),
+    #slide6:checked~#controls label:nth-child(1),
+    #slide1:checked~#controls label:nth-last-child(2),
+    #slide2:checked~#controls label:nth-last-child(3),
+    #slide3:checked~#controls label:nth-last-child(4),
+    #slide4:checked~#controls label:nth-last-child(5),
+    #slide5:checked~#controls label:nth-last-child(6),
+    #slide6:checked~#controls label:nth-last-child(1) {
+        margin: 0;
+    }
+
+    #slides {
+        max-width: calc(100% - 140px);
+        margin: 0 auto;
+    }
+}
+
+
+
+/*:::Boton-Modal:::*/
+
+.boton-modal label {
+    padding: 25px;
+    background-color: white;
+    color: var(--color-dos);
+    border-radius: 4px;
+    margin-top: 90px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.boton-modal label:hover {
+    background-color:var(--color-tres);
+}
+
+.slide-content h2{
+    font-size: 50PX;
+}
+
+/*:::Fin Boton-Modal:::*/
+
+/*:::Estilos de los titulos de los modales:::*/
+
+.content-modal .titulo {
+    margin-top: 10px;
+    margin-bottom: 0;
+
+
+}
+.content-modal h2{
+    font-size: 40px;
+}
+
+/*Estilos de los parrafos de los modales*/
+
+.content-modal p {
+    padding: 9px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    text-align: justify;
+
+}
+
+/*Estilos deL boton agendar Cita*/
+
+.content-modal .btn-agendar-cita {
+
+    padding: 8px 12px;
+    margin-left: 188px;
+    margin-top: 0;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background: 0;
+    color: black;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+/*Estilos del efecto hover del boton agendar cita*/
+
+.content-modal .btn-agendar-cita:hover {
+    background: var(--color-dos);
+    color: white;
+}
+
+
+/*:::Ventana Modal 1:::*/
+#btn-modal {
+    display: none;
+}
+
+.container-modal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    
+}
+
+#btn-modal:checked~.container-modal {
+    display: flex;
+}
+
+.content-modal {
+    width: 100%;
+    max-width: 600px;
+    height: 700px;
+    background-color: #fff;
+    border: 3px;
+    border-radius: 10PX;
+    box-shadow: 10px 10px 10px -14px #000;
+    padding: 20px;
+    font-size: 25px;
+}
+
+/*Estilos del cotenido del modal*/
+
+.content-modal .contenido{
+    background: url("../Imagenes/uñas\ en\ acrilico\ 2.jpg");
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 10PX;
+    border-top-right-radius: 10PX;
+    
+    height: 50%;
+    
+}
+
+
+.cerrar-modal {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+}
+ 
+@media screen and (max-width:800px) {
+        .content-modal {
+            width: 90%;
+        }
+}
+/*:::Fin Ventana Modal-1:::*/
+
+
+/*Ventana modal numero 2*/
+#btn-modal-2 {
+    display: none;
+}
+
+.container-modal-2 {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+
+}
+
+#btn-modal-2:checked~.container-modal-2 {
+    display: flex;
+}
+
+
+
+/*Estilos del cotenido del modal*/
+
+.container-modal-2 .contenido {
+    background: url("../Imagenes/Cepillado\ Alisado.jpeg");
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 20PX;
+    border-top-right-radius: 20PX;
+
+    height: 50%;
+
+}
+
+.cerrar-modal {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+@media screen and (max-width:800px) {
+    .content-modal-2 {
+        width: 90%;
+    }
+}
+/*Fin de la ventana modal numero 2*/
+
+
+/*Ventana modal numero 3*/
+#btn-modal-3 {
+    display: none;
+}
+
+.container-modal-3 {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+
+}
+
+#btn-modal-3:checked~.container-modal-3 {
+    display: flex;
+}
+
+
+
+/*Estilos del cotenido del modal*/
+
+.container-modal-3 .contenido {
+    background: url("../Imagenes/Uñas\ Semis.jpg");
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 20PX;
+    border-top-right-radius: 20PX;
+
+    height: 50%;
+
+}
+
+.cerrar-modal {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+@media screen and (max-width:800px) {
+    .content-modal-3 {
+        width: 90%;
+    }
+}
+
+    
+/*Ventana modal numero 4*/
+#btn-modal-4 {
+        display: none;
+}
+    
+.container-modal-4 {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    
+}
+    
+    #btn-modal-4:checked~.container-modal-4 {
+        display: flex;
+    }
+    
+    
+    
+    /*Estilos del cotenido del modal*/
+    
+    .container-modal-4 .contenido {
+        background: url("../Imagenes/Manicure\ Pedicure\ 2.jpg");
+        background-position: center;
+        background-size: cover;
+        border-top-left-radius: 20PX;
+        border-top-right-radius: 20PX;
+    
+        height: 50%;
+    
+    }
+
+    /*Estilos de el texto para adaptarlo*/
+
+    .container-modal-4 p{
+        font-size: 23px;
+    }
+    
+    
+    .cerrar-modal {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    
+    @media screen and (max-width:800px) {
+        .content-modal-4 {
+            width: 90%;
+        }
+    }
+    
+    /*Fin de la ventana modal numero 4*/
+
+    /*Ventana modal numero 5*/
+    #btn-modal-5 {
+        display: none;
+    }
+    
+    .container-modal-5 {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(144, 148, 150, 0.8);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    
+    }
+    
+    #btn-modal-5:checked~.container-modal-5 {
+        display: flex;
+    }
+    
+    .content-modal-5 {
+        width: 100%;
+        max-width: 600px;
+        height: 600px;
+    
+        background-color: #fff;
+        border: 3px;
+        border-radius: 20PX;
+        box-shadow: 10px 10px 40px -14px #000;
+    }
+    
+    /*Estilos del cotenido del modal*/
+    
+    .container-modal-5 .contenido {
+        background: url("../Imagenes/Cejas2.jpg");
+        background-position: center;
+        background-size: cover;
+        border-top-left-radius: 20PX;
+        border-top-right-radius: 20PX;
+    
+        height: 50%;
+    
+    }
+
+    /*Estilos de el texto para adaptarlo*/
+    
+    .container-modal-5 p {
+        font-size: 27px;
+    }
+    
+    
+    .cerrar-modal {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    
+    @media screen and (max-width:800px) {
+        .content-modal-5 {
+            width: 90%;
+        }
+    }
+    
+    /*Fin de la ventana modal numero 5*/
+
+        /*Ventana modal numero 6*/
+    #btn-modal-6 {
+        display: none;
+    }
+    
+    .container-modal-6 {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(144, 148, 150, 0.8);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    
+    }
+    
+    #btn-modal-6:checked~.container-modal-6 {
+        display: flex;
+    }
+    
+    .content-modal-6 {
+        width: 100%;
+        max-width: 600px;
+        height: 600px;
+        
+        background-color: #fff;
+        border: 3px;
+        border-radius: 20PX;
+        box-shadow: 10px 10px 40px -14px #000;
+    }
+    
+    /*Estilos del cotenido del modal*/
+    
+    .container-modal-6 .contenido {
+        background: url("../Imagenes/Pesta;as.jpg");
+        background-position: center;
+        background-size: cover;
+        border-top-left-radius: 20PX;
+        border-top-right-radius: 20PX;
+    
+        height: 50%;
+    
+    }
+    
+    
+    .cerrar-modal {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    
+    @media screen and (max-width:800px) {
+        .content-modal-6 {
+            width: 90%;
+        }
+    }
+    
+    /*Fin de la ventana modal numero 5*/
+
+/*Fin de los estilos de servicios*/
+
+/*ESTILOS DE LA SECCION DE CONTACTOS*/
+
+.Contacto {
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 40px;
+    padding-bottom: 40PX;
+    display: flex;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    border-radius: 20px;
+    box-shadow: 10px 10px 40px -14px #000;
+    
+
+}
+
+
+.texto-contacto{
+    margin-left: 80px;
+    margin-right: 80px;
+    background-color: #dddddd;
+    border-radius: 16PX;
+    padding: 20px;
+    width: 40%;
+}
+.texto-contacto h2{
+    margin: 20px;
+    text-align: CENTER;
+    color: var(--color-dos);
+
+}
+
+.ubicacion {
+    width: 45%;
+    border-radius: 10px;
+}
+
+
+    /*Estilos del formulario de contacto*/
+
+    /*:::Boton-formulario de contacto:::*/
+    .boton-contacto {
+        padding: 6px;
+        text-align: center;
+        margin-top: 50px;
+    
+    }
+    
+    .boton-contacto label {
+        padding: 10px;
+        background-color: var(--color-dos);
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 300ms ease;
+    }
+    
+    .boton-contacto label:hover {
+        background-color: #185E83;
+    }
+    
+    /*:::Fin Boton-formulario de contacto:::*/
+    
+    
+    /*Ventana formulario de contacto*/
+    #btn-contacto {
+        display: none;
+    }
+    
+    .container-contacto {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(144, 148, 150, 0.8);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+    
+    #btn-contacto:checked~.container-contacto{
+        display: flex;
+    }
+    
+   
+    
+    .content-contacto .btn-cerrar {
+        width: 100%;
+        margin-top: 15px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .content-contacto .btn-cerrar label {
+        padding: 7px 15px;
+        background-color: var(--color-dos);
+        color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 300ms ease;
+        
+    }
+    
+    .content-contacto .btn-cerrar label:hover {
+        background-color: #185E83;
+    }
+    
+    .cerrar-formulario-contacto {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    
+    @media screen and (max-width:800px) {
+        .content-contacto {
+            width: 90%;
+    
+        }
+    
+    }
+    
+    /*Fin ventana de formulario de contacto*/
+
+    /*Estilos del contenido del formulario*/
+
+    .formulario{
+        width: 440px;
+        height: 540px;
+        background: white;
+        border-radius: 9px;
+        box-shadow: 0 0 40px -10px #000;
+        margin: calc(50vh -220px) auto;
+        padding: 10px 30px;
+        max-width: calc(100vw -40px);
+        box-sizing: border-box;
+        position: relative;
+        
+    }
+
+    .formulario .encabezado{
+        display: flex;
+    }
+
+    .formulario .encabezado .btn-cerrar{
+        font-size: 20px;
+        margin-bottom: 7px;
+        
+    }
+   
+    .formulario h2{
+        margin: 10px 0;
+        padding-bottom: 10px;
+        width: 180px;
+        color: var(--color-dos);
+        border-bottom: 3px solid black;
+    }
+    
+
+    .formulario input{
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        background: none;
+        outline: none;
+        resize: none;
+        border: 0;
+        transition: all .3s;
+        border-bottom: 2px solid grey;
+        font-size: 15px;
+    }
+
+
+    .formulario input:focus{
+        border-bottom: 2px solid var(--color-tres);
+
+    }
+
+    .formulario p:before{
+        content: attr(type);
+        display: block;
+        margin: 28px 0 0;
+        font-size: 20px;
+        color: black;
+    }
+
+    .btn-enviar{
+        float: right;
+        padding: 8px 12px;
+        margin: 8px 0 0;
+        border-radius: 10px;
+        border: 2px solid gray;
+        background: 0;
+        color: black;
+        cursor: pointer;
+        transition: all .3s;
+    }
+
+    .btn-enviar:hover{
+        background: var(--color-dos);
+        color: white;
+    }
+
+    .informacion{
+        position: absolute;
+        bottom: -15px;
+        right: -20px;
+        background: black;
+        color:white;
+        width: 350px;
+        padding: 16px 4px 16px 0;
+        border-radius: 6px;
+        font-size: 16px;
+        box-shadow: 10px 10px 40px -14px #000;
+    }
+
+    .formulario span{
+        margin: 0 5px 0 15px;
+    }
+
+    /*Fin de los estilos del contenido del formulario*/
+
+
+/*Fin de los estilos de contacto*/
+
+
+/*ESTILOS DEL FOOTER*/
+
+
+.footer {
+    width: 100%;
+    text-align: CENTER;
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: white;
+    background-color: var(--color-dos);
+    padding: 80px;
+}

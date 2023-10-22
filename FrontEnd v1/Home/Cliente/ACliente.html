@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Génesis Nails</title>
+    <link rel="stylesheet" href="ACliente.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                <img src="Img/LOGO_GENESIS_blanco.png" alt="Génesis Nails">
+            </div>
+            <ul class="navigation">
+                <li><a href="MCliente.html">Inicio</a></li>
+                <li><a href="ACliente.html">Actualizar datos</a></li>
+                <li><a href="../index.html">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="formulario">
+            <div>
+                <h1>Actualizar datos del usuario</h1>
+            </div>
+            <form action="#">
+                <div class="nombre">
+                    <label for="Nombre">Nombre(s): *</label>
+                    <input type="text" name="Nombre" id="">
+                </div>
+                <div class="apellido">
+                    <label for="Apellido">Apellido(s): *</label>
+                    <input type="text" name="Apellido" id="">
+                </div>
+                <div class="telefono">
+                    <label for="Telefono">Telefono: *</label>
+                    <input type="text" name="Telefono" id="">
+                </div>
+                <div class="email">
+                    <label for="Correo Electrónico">Correo Electrónico: *</label>
+                    <input type="text" name="Correo Electrónico" id="">
+                </div>
+                <div class="botones">
+                    <input type="button" value="Actualizar" id="actualizar" class="boton b_aceptar">
+                    <input type="reset" value="Limpiar" class="boton b_limpiar">
+                </div>
+            </form>
+        </section>
+
+        <section id="confirmar">
+            <div id="alerta_confirmar">
+                <div class="conf_titulo">
+                    <h2>Confirmación</h2>
+                </div>
+                <div class="conf_texto">
+                    <p id="textoConfirmar"></p>
+                </div>
+                <div class="botones">
+                    <input type="button" value="Aceptar" id="aceptarConfirmar" class="boton b_aceptar">
+                    <input type="button" value="Cancelar" id="cancelarConfirmar" class="boton b_limpiar">
+                </div>
+            </div>
+            <div id="alerta_enviado">
+                <div class="conf_titulo">
+                    <h2>Confirmación</h2>
+                </div>
+                <div class="conf_texto">
+                    <p id="textoEnviado"></p>
+                </div>
+                <div class="imagen_check">
+                    <img src="Img/iconmonstr-check-mark-circle-lined-240.png" alt="Enviado">
+                </div>
+                <div class="botones">
+                    <input type="button" value="Aceptar" id="aceptarEnviado" class="boton b_aceptar">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <h2>&copySalón de Belleza Génesis Nails</h2>
+        </div>
+    </footer>
+
+    <script src="ACliente.js"></script>
+</body>
+</html>
